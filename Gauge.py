@@ -70,23 +70,6 @@ def Arc_Gauge_Draw(img, center_x, center_y, size, value, text):
     innerPoint = []
     outerPoint = []
 
-    # for i in range(135, 406):
-    #     theta = math.pi * (i / 180)
-
-    #     p1 = [int((inner_Radius * math.cos(theta)) + center_x), int((inner_Radius * math.sin(theta)) + center_y)]
-    #     innerPoint.append(p1)
-    #     p3 = [int((outer_Radius * math.cos(theta)) + center_x), int((outer_Radius * math.sin(theta)) + center_y)]
-    #     outerPoint.append(p3)
-
-
-    #     if ((i - 135) % 27 == 0) and (i != 135):
-    #         totalPoint = []
-    #         reversed_outerPoint = list(reversed(outerPoint))
-    #         totalPoint = innerPoint + reversed_outerPoint
-    #         coverPoint = np.array([totalPoint], np.int32)
-    #         img = cv2.polylines(img, [coverPoint], True, background_Color, 2)
-
-
     for i in range(135, 406):
         theta = math.pi * (i / 180)
         nextTheta = math.pi * ((i + 1) / 180)
