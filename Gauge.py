@@ -26,9 +26,9 @@ def Stick_Gauge_Draw(img, center_x, center_y, width, height, value, text):
 
             leftUpper_Point = rightUpper_Point
             leftLower_Point = rightLower_Point
-            current_Color_B = int(base_Color[0] - (abs(end_Color[0] - base_Color[0]) * i / value))
-            current_Color_G = int(base_Color[1] - (abs(end_Color[1] - base_Color[1]) * i / value))
-            current_Color_R = int(base_Color[2] + (abs(end_Color[2] - base_Color[2]) * i / value))
+            current_Color_B = int(base_Color[0] - (abs(end_Color[0] - base_Color[0]) * i / 100))
+            current_Color_G = int(base_Color[1] - (abs(end_Color[1] - base_Color[1]) * i / 100))
+            current_Color_R = int(base_Color[2] + (abs(end_Color[2] - base_Color[2]) * i / 100))
             current_Color = (current_Color_B, current_Color_G, current_Color_R)
 
     leftUpper_Point = [int(center_x - (width / 2) * 0.9), int(center_y - (height / 6))]
